@@ -1,0 +1,75 @@
+
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>База данных студентов</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+<script src="main.js"></script>
+
+<h2>Форма добавления информации о студенте</h2>
+
+<div class="form-outline">
+    <form action="/add-students" method="POST">
+        <p>
+            <label for="name">Имя студента:</label>
+            <input id="studentName" type="text">
+        </p>
+
+        <p>
+            <label for="date">Дата рождения:</label>
+            <input id="birthDate" type="date" value="01.01.2000">
+        </p>
+
+        <p>
+            <label>
+                Пол:
+                <select id="gender">
+                    <option value="1" selected>Мужской</option>
+                    <option value="2">Женский</option>
+                </select>
+            </label>
+        </p>
+
+        <input type="button" id="add" value="Добавить" onclick="addStudent()">
+
+    </form>
+</div>
+
+<h2>Таблица студентов</h2>
+
+<table class="students-tab" id="studentsTable">
+
+    <thead>
+    <tr>
+        <td>Имя студента</td>
+        <td>Пол</td>
+        <td>Дата рождения</td>
+        <td>Возраст</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+
+    <tr>
+        <td colspan="4">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="3">Средний возраст студентов</td>
+        <td id="averageAge"></td>
+    </tr>
+
+    </tfoot>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+h2 {
+    color: black;
+}
+
+.students-tab {
+    border: 1px solid steelblue;
+    width: 650px;
+    border-collapse: collapse;
+    margin-bottom: 300px;
+}
+
+.students-tab tr td {
+    border: 1px solid steelblue;
+}
+
+
+.input-form > input{
+    width: 80px;
+    overflow: auto;
+}
+
+.form-outline {
+    border: 1px solid steelblue;
+    width: 490px;
+    padding: 0 10px;
+}
